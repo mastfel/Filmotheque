@@ -28,7 +28,7 @@ class DefaultController extends AbstractController
     }#end function create()
 
    /**
-     * @Route ("/ajouter-un-film.html", name="film_create", methods={"GET|POST"})
+     * @Route ("/ajouter-un-film", name="film_create", methods={"GET|POST"})
      */
     public function create (Request $request, EntityManagerInterface $entityManager ):Response
  {
