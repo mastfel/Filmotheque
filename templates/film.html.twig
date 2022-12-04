@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un film{% endblock %}
+
+{% block body %}
+
+
+
+
+    <h1 class="text-center my-4">Ajouter un nouveau film</h1>
+
+
+
+<div class="row ">
+    <div class="col-4 mx-auto justity-content-center">
+
+        {{ form_start(form_film,{'attr': {novalidate: 'novalidate'}}
+) }}
+
+         {{ form_row(form_film.titre) }}
+        {{ form_row(form_film.realisateur) }}
+        {{ form_row(form_film.duree) }}
+        {{ form_row(form_film.anneeSortie) }}
+
+        {{ form_end(form_film)}}
+
+        
+         
+    </div>
+</div>
+
+
+
+
+
+ 
+ 
+ 
+
+ 
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
